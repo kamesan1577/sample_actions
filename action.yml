@@ -1,0 +1,22 @@
+name: "hello"
+description: "helloing hello"
+branding:
+  icon: upload-cloud
+  color: blue
+inputs:
+  input1: # 入力値のID
+    description: "最初の入力"
+    required: true # 必須かどうか
+    default: "hello" # デフォルト値
+  input2: # 入力値のID
+    description: "二番目の入力"
+    required: true # 必須かどうか
+    default: "world" # デフォルト値
+outputs:
+  output1: # 出力値のID
+    description: "最初の出力"
+  output2: # 出力値のID
+    description: "二番目の出力"
+runs:
+  using: "node16"
+  main: "index.js" # 実行するJavaScriptファイル
